@@ -1,0 +1,90 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+    <title>Emp-Man: Employee Manager</title>
+    
+</head>
+<body> 
+    <section data-role="page" id="addNewHirePage">
+        <header data-role="header" data-position="fixed">
+            <p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+        </header><!--/Header -->
+    	<nav data-role="navbar" data-iconpos="left">
+			<ul>
+				<li><a href="index.html" data-icon="home" data-theme="a">Home</a></li>
+				<li><a href="#bFname" data-icon="grid" data-theme="a">Browse</a></li>
+			</ul>
+		</nav>
+        <article data-role="content">
+
+            <form method="post" id="addNewHireForm">
+                <fieldset>
+                    <input type="hidden" id="key" value="" />
+                    <input type="hidden" id="revkey" value="" />
+                    <span class="small">* Fields are required</span>
+                    <div id='errors'><ul></ul></div>
+
+                    <div>
+                        <div data-role="fieldcontain">
+                            <label for="firstName">First Name:* </label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Doug" title="First name required!" class="required text" />
+                        </div><!-- field contain --> 
+                        <div data-role="fieldcontain">
+                            <label for="lastName">Last Name:* </label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Bradley" title="Last name required!" class="required text" /> 
+                        </div><!-- field contain --> 
+                        <div data-role="fieldcontain">
+                            <label for="hireDate">Hire Date: </label>
+                            <input type="date" placeholder="2-4-2011" id="hireDate" name="hireDate"/>
+                        </div><!-- field contain --> 
+                        <div data-role="fieldcontain">
+                            <label for="empStatus">Active Employee </label>
+                            <input type="checkbox" id="empStatus" name="empStatus" value='Active' CHECKED /> 
+                            <!-- responsive term date? --> 
+                        </div><!-- field contain --> 
+                        <div data-role="fieldcontain">
+                            <div id="select">
+                        
+                                <label for="position">Position:* </label>
+                                <select name="jobTitle" id='jobTitle' title="Select a position" class="required" data-native-menu="false" >
+                                     <option value=''>--Select a Position--</option>
+                                </select>
+                  
+                            </div>
+                        </div><!-- field contain --> 
+                        <div data-role="fieldcontain">
+                            <fieldset>
+                                <legend>Operating System</legend>
+                                <label for="winxp">Windows XP</label>
+                                <input type="radio" name="os" id="winxp" value='WinXP' CHECKED />
+                                <label for="win7">Windows 7</label>
+                                <input type="radio" name="os" id="win7" value='Win7' />
+                            </fieldset>
+                        </div><!-- field contain --> 
+                        <div data-role="fieldcontain">
+                            <label for="swipeID">Swipe ID:* </label>
+                            <input type="text" id="swipeID" name="swipeID" placeholder="12345" class="required number" title="Swipe ID Required" />
+                        </div><!-- field contain --> 
+                        <div data-role="fieldcontain">
+                            <label for="phoneExt">Phone Extension:* </label>
+                            <input type="text" id="phoneExt" name="phoneExt" placeholder="2225" class="required number" title="Phone Extension required" /> 
+                        </div><!-- field contain --> 
+                        <div data-role="fieldcontain">
+                            <label for="notes">Notes: </label>
+                            <textarea id="notes" name="notes"></textarea>
+                        </div><!-- field contain --> 
+                            <button type="submit" id='submit' name='submit' data-theme='b'>Add New-Hire</button>
+                    <div id='errorsMsg'><ul></ul></div>
+                    </div>
+                </fieldset>
+            </form>
+
+        </article><!-- content -->
+        <footer data-role="footer" data-position="fixed" id='footer'>
+                <h4>Emp-Man &copy; All Rights Reserved</h4>
+        </footer><!-- Footer -->
+    </section><!-- /addNewHirePage -->
+
+</body>
+</html>

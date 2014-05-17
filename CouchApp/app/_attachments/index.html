@@ -1,0 +1,94 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    
+    <title>Emp-Man: Employee Manager (For IT)</title>
+    
+    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Mobile IE needs ClearType for smoothing fonts -->
+    <meta http-equiv="cleartype" content="on">
+    
+    <!-- StyleSheets under here -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.1.0.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />    
+    <link rel="apple-touch-icon" href="images/iphone-icon.png" />
+
+    <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+    <script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body> 
+    <section data-role="page" id="home">
+        <header data-role="header" data-position="fixed">
+            <p><img src="images/logo_light.png" class="logoImage" /></p>
+        </header>
+    
+        <article data-role="content">
+
+              <div data-role="collapsible-set" data-theme="a">
+                  
+                <div data-role="collapsible">
+                      <h3>Browse by...</h3>
+                    <ul data-role="listview" data-inset="false">
+                        <li>
+                            <a href="#bFname">
+                                <h3>First Name</h3>
+                                <p>Browse employees by their first name.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- collapsible: Browse by  -->
+                <div data-role="collapsible">
+                    <h3>Manage Emp-Man</h3>
+                    <ul data-role="listview" data-inset="false">
+                        <li>
+                            <a href="edit.html">
+                                <h3>Add a NewHire</h3>
+                                <p>still needs to be worked</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div><!-- collapsible set -->
+        </article><!-- content -->
+        <footer data-role="footer" data-position="fixed" id='footer'>
+                <h4>Emp-Man &copy; All Rights Reserved</h4>
+        </footer><!-- Footer -->
+    </section> <!--  /home -->
+
+    <section data-role="page" id="bFname">
+        <header data-role="header" data-position="fixed">
+            <p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+        </header><!-- Header -->
+		<nav data-role="navbar" data-iconpos="left">
+			<ul>
+				<li><a href="index.html" data-icon="home" data-theme="a">Home</a></li>
+				<li><a href="edit.html" data-icon="add" data-theme="b">Add New Employee</a></li>
+			</ul>
+		</nav>
+        <article data-role="content">
+            <ul data-role="listview" id="bEmployeeLV"></ul>
+        </article><!-- Content -->
+
+        <footer data-role="footer" data-position="fixed" id='footer'>
+                <h4>Emp-Man &copy; All Rights Reserved</h4>
+        </footer><!-- Footer -->
+    </section><!-- /bFname -->
+
+
+    <!-- JavaScript under here -->
+    <script type="text/javascript" src="js/libs/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.mobile-1.1.0.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.couch.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
