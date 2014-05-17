@@ -1,0 +1,29 @@
+empID,empfname,emplname,hired,created,jobStatus,posID,deptID,swipid,phoneext,reptag,vmpass,companynumber,netid,netpass,emailid,emailpass,emailaddress,pandionid,pandionpass,stationID,notes
+383,Vanessa,Chan,2012-07-14 00:00:00,2012-07-14 00:00:00,inactive,0,0,12345,2622,CV622,1234,(425) 203-3900,vchan,x10v8n3558c,vanessac,x10v8n3558c,vchan@example.com,vanessa.chan@chat.example.com,chanv,0,
+382,Tina,Bomgardner,2012-07-14 00:00:00,2012-07-14 00:00:00,Active,0,0,12345,2699,BT699,1234,(425) 203-3900,tbomgardner,x10t1n8b,tinab,x10t1n8b,tbomgardner@example.com,tina.bomgardner@chat.example.com,bomgardnert,0,
+381,Tina,Garcia,2012-07-14 00:00:00,2012-07-14 00:00:00,Active,0,0,12345,2635,GT635,1234,(425) 203-3900,tgarcia,x10t1n8g,tinag,x10t1n8g,tgarcia@example.com,tina.garcia@chat.example.com,garciat,0,
+380,Paul,Duran,2012-07-14 00:00:00,2012-07-14 00:00:00,inactive,0,0,12345,2619,DP619,1234,(425) 203-3900,pduran,x10p8uld,pauld,x10p8uld,pduran@example.com,paul.duran@chat.example.com,duranp,0,
+379,Kirstie,Blanding,2012-07-14 00:00:00,2012-07-14 00:00:00,inactive,0,0,12345,2626,BK626,1234,(425) 203-3900,kblanding,x10k1r5t13b,kirstieb,x10k1r5t13b,kblanding@example.com,kirstie.blanding@chat.example.com,blandingk,0,o
+375,Michael,Youngblood,,,Active,0,0,12345,2225,YM671,1234,(425) 203-3900,myoungblood,x10m1ch83ly,michaely,x10m1ch83ly,michaely@example.com,jessica.macdougall@sku.example.com,macdougallj,0,o
+376,Thomas,Wright,2012-07-14 00:00:00,2012-07-14 00:00:00,Active,0,0,12345,2623,WT623,1234,(425) 203-3900,twright,x10th0m85w,thomasw,x10th0m85w,twright@example.com,thomas.wright@chat.example.com,wrightt,0,o
+377,Rani,Duke,2012-07-14 00:00:00,2012-07-14 00:00:00,inactive,0,0,12345,2611,DR611,1234,(425) 203-3900,rduke,x10r8n1d,ranid,x10r8n1d,rduke@example.com,rani.duke@chat.example.com,duker,0,o
+378,Megan,Guardipee,2012-07-14 00:00:00,2012-07-14 00:00:00,inactive,0,0,12345,2627,GM627,1234,(425) 203-3900,mguardipee,x10m3g8ng,megang,x10m3g8ng,mguardipee@example.com,megan.guardipee@chat.example.com,guardipeem,0,o
+373,Dave,Rye,,,Active,0,0,12345,2112,RD112,1234,(425) 203-3900,drye,x10d8v3r,daver,x10d8v3r,daver@example.com,dave.rye@sku.example.com,ryed,0,Sr. Vice President
+374,Michael,Youngblood,,,Active,0,0,12345,2225,YM670,1234,(425) 203-3900,myoungblood,x10m1ch83ly,michaely,x10m1ch83ly,michaely@example.com,jessica.macdougall@sku.example.com,macdougallj,0,o
+372,Evan,Smith,,,inactive,0,0,12345,2225,YM667,1234,(425) 203-3900,esmith,x10m1ch83ly,evans,x10m1ch83ly,evans@example.com,evan.smith@sku.example.com,smithe,0,o
+371,Douglas,Wiercinski,,,Active,0,0,12345,2110,WD110,1234,(425) 203-3900,dwiercinski,x10d0ugl8s,douglasw,x10d0ugl8s,douglasw@example.com,douglas.wiercinski@sku.example.com,wiercinskid,0,o
+370,Greg,Walker,,,Active,0,0,12345,2225,YM668,1234,(425) 203-3900,gwalker,x10m1ch83ly,gregw,x10m1ch83ly,gregw@example.com,greg.walker@sku.example.com,walkerg,0,o
+369,Jacquie,Voss,,,Active,0,0,12345,2225,YM669,1234,(425) 203-3900,jvoss,x10m1ch83ly,jacquiev,x10m1ch83ly,jacquiev@example.com,jacquie.voss@sku.example.com,vossj,0,o
+368,Eric,Boyd,,,Active,0,0,12345,2225,YM666,1234,(425) 203-3900,eboyd,x10m1ch83ly,ericb,x10m1ch83ly,ericb@example.com,eric.boyd@sku.example.com,boyde,0,o
+367,Becky,Fitzpatrick,,,Active,0,0,12345,2170,FB170,1234,(425) 203-3900,bfitzpatrick,x10b3ckyf,beckyf,x10b3ckyf,beckyf@example.com,becky.fitzpatrick@sku.example.com,fitzpatrickb,0,o
+366,Dave,Mayer,,,Active,0,0,12345,2589,MD589,1234,(425) 203-3900,dmayer,x10d8v3m,davem,x10d8v3m,davem@example.com,dave.mayer@sku.example.com,mayerd,0,President/CEO
+365,Connie,Hicks,,,Active,0,0,12345,2707,HC707,1234,(425) 203-3900,chicks,x10c0nn13h,connieh,x10c0nn13h,connieh@example.com,connie.hicks@sku.example.com,hicksc,0,o
+362,Ben,Brockhaus,,,Active,0,0,12345,2210,BB210,1234,(425) 203-3900,bbrockhaus,x10b3nb,brockhaus,x10b3nb,brockhaus@example.com,ben.brockhaus@sku.example.com,brockhausb,0,o
+363,Bill,Phillips,,,Active,0,0,12345,2615,PB615,1234,(425) 203-3900,bphillips,x10b1llp,billp,x10b1llp,billp@example.com,bill.phillips@sku.example.com,billp,0,o
+364,Brandon,Keeley,,,Active,0,0,12345,2222,KB222,1234,(425) 203-3900,bkeeley,x10br8nd0nk,brandonk,x10br8nd0nk,brandonk@example.com,brandon.keeley@sku.example.com,keeleyb,0,Director of Marketing
+361,Alexandria,Cardenas,,,Active,0,0,12345,2614,CA614,1234,(425) 203-3900,acardenas,x108l3x8ndr18c,alexandriac,x108l3x8ndr18c,alexandriac@example.com,alexandria.cardenas@sku.example.com,cardenasa,0,o
+360,Andrew,Packer,,,Active,0,0,12345,2826,PA826,1234,(425) 203-3900,apacker,x109ndr8wp,andrewp,x109ndr8wp,andrewp@example.com,andrew.packer@sku.example.com,packera,0,The Pac-Man. Go to guy if you need support or have questions about old products.
+359,Aaron,Beaudry,,,Active,0,0,12345,2635,BA635,1234,(425) 203-3900,abeaudry,x108b38udry,aaronb,x108b38udry,aaronb@example.com,aaron.beaudry@sku.example.com,beaudrya,0,Came over when we closed Orca
+358,Michael,Youngblood,,,Active,0,0,12345,2225,YM225,1234,(425) 203-3900,myoungblood,x10m1ch83ly,michaely,x10m1ch83ly,michaely@example.com,jessica.macdougall@sku.example.com,macdougallj,0,Its a me!
+356,Aneatra,Harrison,,,Active,0,0,12345,2638,HA638,1234,(425) 203-3900,aharrison,x108n38tr8h,aneatrah,x10m1ch83ly,aneatrah@example.com,aneatra.harrison@sku.example.com,harrisona,0,o
+357,Jessica,MacDougall,,,Active,0,0,37562,2613,MJ613,1234,(425) 203-3900,jmacdougall,x10j3551c8m,jessicamd,x10j3551c8m,jessicamd@example.com,jessica.macdougall@sku.example.com,macdougallj,0,Best Phone Rep Ever!

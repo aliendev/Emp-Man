@@ -1,0 +1,101 @@
+<DATA>
+
+	<ROW>
+		<empfname>Thomas</empfname>
+		<emplname>Wright</emplname>
+		<hired>2012-07-14 00:00:00</hired>
+		<created>2012-07-14 00:00:00</created>
+		<jobStatus>Active</jobStatus>
+		<posID>0</posID>
+		<deptID>0</deptID>
+		<swipid>12345</swipid>
+		<phoneext>2623</phoneext>
+		<reptag>WT623</reptag>
+		<vmpass>1234</vmpass>
+		<companynumber>(425) 203-3900</companynumber>
+		<netid>twright</netid>
+		<netpass>x10th0m85w</netpass>
+		<emailid>thomasw</emailid>
+		<emailpass>x10th0m85w</emailpass>
+		<emailaddress>twright@example.com</emailaddress>
+		<pandionid>thomas.wright@chat.example.com</pandionid>
+		<pandionpass>wrightt</pandionpass>
+		<stationID>0</stationID>
+		<notes>o</notes>
+	</ROW>
+
+	<ROW>
+		<empfname>Rani</empfname>
+		<emplname>Duke</emplname>
+		<hired>2012-07-14 00:00:00</hired>
+		<created>2012-07-14 00:00:00</created>
+		<jobStatus>inactive</jobStatus>
+		<posID>0</posID>
+		<deptID>0</deptID>
+		<swipid>12345</swipid>
+		<phoneext>2611</phoneext>
+		<reptag>DR611</reptag>
+		<vmpass>1234</vmpass>
+		<companynumber>(425) 203-3900</companynumber>
+		<netid>rduke</netid>
+		<netpass>x10r8n1d</netpass>
+		<emailid>ranid</emailid>
+		<emailpass>x10r8n1d</emailpass>
+		<emailaddress>rduke@example.com</emailaddress>
+		<pandionid>rani.duke@chat.example.com</pandionid>
+		<pandionpass>duker</pandionpass>
+		<stationID>0</stationID>
+		<notes>o</notes>
+	</ROW>
+
+
+	<ROW>
+		<empfname>Megan</empfname>
+		<emplname>Guardipee</emplname>
+		<hired>2012-07-14 00:00:00</hired>
+		<created>2012-07-14 00:00:00</created>
+		<jobStatus>inactive</jobStatus>
+		<posID>0</posID>
+		<deptID>0</deptID>
+		<swipid>12345</swipid>
+		<phoneext>2627</phoneext>
+		<reptag>GM627</reptag>
+		<vmpass>1234</vmpass>
+		<companynumber>(425) 203-3900</companynumber>
+		<netid>mguardipee</netid>
+		<netpass>x10m3g8ng</netpass>
+		<emailid>megang</emailid>
+		<emailpass>x10m3g8ng</emailpass>
+		<emailaddress>mguardipee@example.com</emailaddress>
+		<pandionid>megan.guardipee@chat.example.com</pandionid>
+		<pandionpass>guardipeem</pandionpass>
+		<stationID>0</stationID>
+		<notes>o</notes>
+	</ROW>
+
+
+	<ROW>
+		<empfname>Kirstie</empfname>
+		<emplname>Blanding</emplname>
+		<hired>2012-07-14 00:00:00</hired>
+		<created>2012-07-14 00:00:00</created>
+		<jobStatus>inactive</jobStatus>
+		<posID>0</posID>
+		<deptID>0</deptID>
+		<swipid>12345</swipid>
+		<phoneext>2626</phoneext>
+		<reptag>BK626</reptag>
+		<vmpass>1234</vmpass>
+		<companynumber>(425) 203-3900</companynumber>
+		<netid>kblanding</netid>
+		<netpass>x10k1r5t13b</netpass>
+		<emailid>kirstieb</emailid>
+		<emailpass>x10k1r5t13b</emailpass>
+		<emailaddress>kblanding@example.com</emailaddress>
+		<pandionid>kirstie.blanding@chat.example.com</pandionid>
+		<pandionpass>blandingk</pandionpass>
+		<stationID>0</stationID>
+		<notes>o</notes>
+	</ROW>
+
+</DATA>
