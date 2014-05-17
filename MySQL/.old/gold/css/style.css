@@ -1,0 +1,14 @@
+.ui-page {
+	background: transparent url('../images/plaid_bg.png') repeat center center;
+}
+
+label.error {
+    display:block;
+    margin:10px 0;
+    color:#c00;
+}
+
+
+.logoImage {
+	padding: 0 10px;
+}

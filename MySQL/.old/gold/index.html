@@ -1,0 +1,420 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Gold|Emp-Man: Employee Manager (For IT)</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+	<link rel="apple-touch-icon" href="images/iphone-icon.png" />
+
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+	<div data-role="page" id="home">
+		<div data-role="header" data-position="fixed">
+			<p><img src="images/logo_light.png" class="logoImage" /></p>
+		</div>
+	
+		<div data-role="content">
+
+			<a href="#newHire"><img src="images/feature_add-an-employee_tmp.png" /></a><br />
+			<br />
+
+			<form method="post" action="" id="searchForm">
+		  		<input type="search" name="search" id="search-basic" placeholder="Search Employees" />
+		  	</form>
+		  	<br />
+
+		  	<div data-role="collapsible-set" data-theme="a">
+		  		
+                <div data-role="collapsible">
+			  		<h3>Browse by...</h3>
+					<ul data-role="listview" data-inset="false">
+						<li>
+							<a href="#" id="displayByFname">
+								<h3>First Name</h3>
+								<p>Browse employees by their first name.</p>
+							</a>
+						</li>						
+						<!-- li> // put this back when i get db working
+							<a href="#bDept" id="displayByDept">
+								<h3>Departments</h3>
+								<p>Browse by Departments.</p>
+							</a>
+						</li -->
+						<li>
+							<a href="#bExt" id="displayByExt">
+								<h3>Phone Extensions</h3>
+								<p>Browse Phone Extension.</p>
+							</a>
+						</li>
+					</ul>
+				</div><!-- collapsible: Browse by  -->
+				
+                <div data-role="collapsible">
+					<h3>Edit Storage</h3>
+					<ul data-role="listview" data-inset="false">
+						<li>
+							<a href="#" id="clearLink">
+								<h3>Clear Data</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#newHire">
+								<h3>Add a NewHire</h3>
+							</a>
+						</li>
+						<!-- li> // put back when i get db working
+							<a href="#newDepartment">
+								<h3>Add a Department</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#newPosition">
+								<h3>Add a Position</h3>
+							</a>
+						</li -->
+					</ul>
+				</div><!-- collapsible: edit storage -->
+                               
+				<div data-role="collapsible">
+					<h3>Extras</h3>
+					<ul data-role="listview" data-inset="false">
+						<li>
+							<a href="#newsfeed1" id="getNewsFeed">
+								<h3>Newsfeeds</h3>
+							</a>
+						</li>
+					</ul>
+				</div><!-- collapsible: extras -->                
+			</div><!-- collapsible set -->
+
+
+		</div>
+
+		<div data-role="footer" data-position="fixed" id='footer'>
+				<h4><a href="../bronze/index.html" data-icon="info" rel="external">Bronze Version</a></h4>
+		</div><!-- Footer -->
+	</div>
+
+
+	<div data-role="page" id="bFname">
+		<div data-role="header" data-position="fixed">
+			<p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+		</div><!-- Header -->
+	
+		<div data-role="content" id="employeelistview">
+
+		</div><!-- Content -->
+
+		<div data-role="footer" data-position="fixed">
+				<h4><a href="../bronze/index.html" data-icon="info" rel="external">Bronze Version</a></h4>
+		</div><!-- Footer -->
+	</div><!-- Page: bFname -->
+
+	<!-- Dynamic employee view -->
+	<div data-role="page" id="bEmployee">
+		<!-- div data-role="header" data-position="fixed"><h1></h1></div -->
+		<div data-role="header" data-position="fixed">
+			<p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+
+		</div><!-- Header -->
+	
+
+
+		<div data-role="content"></div>
+
+		<div data-role="footer" data-position="fixed">
+				<h4><a href="../bronze/index.html" data-icon="info" rel="external">Bronze Version</a></h4>
+		</div><!-- footer -->
+	</div><!-- page -->
+
+
+
+
+
+	<div data-role="page" id="bExt" data-ad-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+		</div><!-- Header -->
+
+
+		<div data-role="content" id="extListView">
+			
+		</div><!-- content -->
+
+
+		<div data-role="footer" data-position="fixed">
+				<h4><a href="../bronze/index.html" data-icon="info" rel="external">Bronze Version</a></h4>
+		</div><!-- footer -->
+	</div><!-- page -->
+
+
+
+	<!-- I think I am going to make this the thumb grid --> 
+	<div data-role="page" id="bDept">
+		<div data-role="header" data-position="fixed">
+			<p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+		</div><!-- Header -->
+	
+		<div data-role="content" id='departmentListView'>
+		</div><!-- content -->
+
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="../bronze/index.html" data-icon="info" rel="external">Bronze Version</a></h4>
+		</div><!-- footer -->
+
+	</div><!-- page -->
+
+
+	<div data-role="page" id="newHire">
+		<div data-role="header" data-position="fixed">
+			<p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+		</div><!-- Header -->
+	
+		<div data-role="header" data-position="inline">
+			<a href="index.html" data-icon="delete">Cancel</a>
+			<h1>Edit Contact</h1>
+			<a href="index.html" data-icon="check" data-theme="b">Save</a>
+		</div>
+
+		<div data-role="content">
+
+	        <form method="post" id="addNewHire">
+	            <fieldset>
+	                <span class="small">* Fields are required</span>
+	                <ul id='errors'></ul>
+
+	                <div>
+	                	<div data-role="fieldcontain">
+	                    	<label for="firstName">First Name:* </label>
+		                    <input type="text" id="firstName" placeholder="Doug" class="required text" />
+		                </div><!-- field contain --> 
+	                	<div data-role="fieldcontain">
+		                    <label for="lastName">Last Name:* </label>
+		                    <input type="text" id="lastName" placeholder="Bradley" class="required text" /> 
+		                </div><!-- field contain --> 
+	                	<div data-role="fieldcontain">
+		                    <label for="hireDate">Hire Date: </label>
+		                    <input type="date" placeholder="2-4-2011" id="hireDate"/>
+		                </div><!-- field contain --> 
+	                	<div data-role="fieldcontain">
+		                    <label for="empStatus">Active Employee </label>
+		                    <input type="checkbox" id="empStatus" value='Active' CHECKED /> 
+		                    <!-- responsive term date? --> 
+		                </div><!-- field contain --> 
+	                	<div data-role="fieldcontain">
+		                    <div id="select">
+		                        <label for="position">Position:* </label>
+		                    </div>
+		                </div><!-- field contain --> 
+	                	<div data-role="fieldcontain">
+		                    <label for="exp">Experience: </label>
+		                    <input type="range" id="exp" min="1" max="10" placeholder="1"  />
+		                </div><!-- field contain --> 
+	                	<div data-role="fieldcontain">
+	                		<fieldset>
+	                			<legend>Operating System</legend>
+			                    <label for="winxp">Windows XP</label>
+			                    <input type="radio" name="os" id="winxp" value='WinXP' CHECKED />
+			                    <label for="win7">Windows 7</label>
+			                    <input type="radio" name="os" id="win7" value='Win7' />
+		                    </fieldset>
+		                </div><!-- field contain --> 
+	                	<div data-role="fieldcontain">
+		                    <label for="swipeID">Swipe ID:* </label>
+		                    <input type="text" id="swipeID" placeholder="12345" class="required number"  />
+		                </div><!-- field contain --> 
+	                	<div data-role="fieldcontain">
+		                    <label for="phoneExt">Phone Extension:* </label>
+		                    <input type="text" id="phoneExt" placeholder="2225" class="required number" /> 
+		                </div><!-- field contain --> 
+	                	<div data-role="fieldcontain">
+		                    <label for="notes">Notes: </label>
+		                    <textarea id="notes"></textarea>
+		                </div><!-- field contain --> 
+	                	<!-- div data-role="fieldcontain" -->
+		                	<button type="submit" id='submit' data-theme='b'>Add New-Hire</button>
+		                 <!-- </div --><!-- field contain --> 
+	                </div>
+	            </fieldset>
+	        </form>
+
+		</div><!-- content -->
+
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="../bronze/index.html" data-icon="info" rel="external">Bronze Version</a></h4>
+		</div><!-- footer -->
+	</div>
+
+
+	<div data-role="page" id="newsfeed1"> 
+		<!-- I want this to have an infinite list -->
+
+		<div data-role="header" data-position="fixed">
+			<p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#newsfeed1" class="ui-btn-active ui-state-persist">AlienDev</a></li>
+					<li><a href="#newsfeed2">Gizmodo</a></li>
+					<li><a href="#newsfeed3">X10</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- Header -->
+
+		<div data-role="content">
+		    <ul data-role="listview" id="feed1"></ul>
+		</div><!-- content -->
+
+
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="../bronze/index.html" data-icon="info" rel="external">Bronze Version</a></h4>
+		</div><!-- footer -->
+	</div><!-- page -->
+
+
+	<div data-role="page" id="newsfeed2"> 
+		<!-- I want this to have an infinite list -->
+
+		<div data-role="header" data-position="fixed">
+			<p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#newsfeed1">AlienDev</a></li>
+					<li><a href="#newsfeed2" class="ui-btn-active ui-state-persist">Gizmodo</a></li>
+					<li><a href="#newsfeed3">X10</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- Header -->
+
+		<div data-role="content">
+		    <ul data-role="listview" id="feed2"></ul>
+		</div><!-- content -->
+
+
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="../bronze/index.html" data-icon="info" rel="external">Bronze Version</a></h4>
+		</div><!-- footer -->
+	</div><!-- page -->
+
+
+	<div data-role="page" id="newsfeed3"> 
+		<!-- I want this to have an infinite list -->
+
+		<div data-role="header" data-position="fixed">
+			<p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#newsfeed1">AlienDev</a></li>
+					<li><a href="#newsfeed2">Gizmodo</a></li>
+					<li><a href="#newsfeed3" class="ui-btn-active ui-state-persist">X10</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- Header -->
+
+		<div data-role="content">
+		    <ul data-role="listview" id="feed3"></ul>
+		</div><!-- content -->
+
+
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="../bronze/index.html" data-icon="info" rel="external">Bronze Version</a></h4>
+		</div><!-- footer -->
+	</div><!-- page -->
+
+
+	<div data-role="page" id="newDepartment"data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+		</div><!-- Header -->
+
+		<div data-role="content">
+			<form action="post" id="newDepartmentForm">
+				<div data-role="fieldcontain">
+					<label for="departmentName">Department Name</label>
+					<input type="text" name="departmentName" id="departmentName" />
+				</div><!-- fieldcontain: departmentName -->
+				<div data-role="fieldcontain">
+					<label for="departmentDisc">Description</label>
+					<input type="text" name="departmentDisc" id="departmentDisc" />
+				</div><!-- fieldcontain: departmentDisc -->
+				<!-- div data-role="fieldcontain">
+					<label for="toggleSwitch"></label>
+					<select data-role="slider">
+						<option value='off'>Nope</option>
+						<option value='on'>Yup</option>
+					</select>
+				</div -->
+
+				<div data-role="fieldcontain">
+					<input type="button" value="Clear Form" data-theme="a" />
+					<input type="button" value="Add Department" data-theme="b" />
+				</div><!-- fieldcontain: buttons -->
+
+
+			</form>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="../bronze/index.html" data-icon="info" rel="external">Bronze Version</a></h4>
+		</div><!-- footer -->
+	</div><!-- page -->
+
+	<div data-role="page" id="newPosition">
+		<div data-role="header" data-position="fixed">
+			<p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+		</div><!-- Header -->
+
+		<div data-role="content">
+			<form action="post" id="newPositionForm">
+				<div data-role="fieldcontain">
+					<label for="departmentSelect"></label>
+					<input type="text" name="departmentSelect" id="departmentSelect" />
+				</div><!-- fieldcontain: departmentSelect -->	
+				<div data-role="fieldcontain">
+					<label for="positionName"></label>
+					<input type="text" name="positionName" id="positionName" />
+				</div><!-- fieldcontain: positionName -->	
+				<div data-role="fieldcontain">
+					<label for="positionDisc"></label>
+					<input type="text" name="positionDisc" id="positionDisc" />
+				</div><!-- fieldcontain: positionDisc -->	
+				<div data-role="fieldcontain">
+					<input type="button" value="Clear Form" data-theme="a" />
+					<input type="button" value="Add Department" data-theme="b" />
+				</div><!-- fieldcontain: buttons -->				
+			</form>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="../bronze/index.html" data-icon="info" rel="external">Bronze Version</a></h4>
+		</div><!-- footer -->
+	</div><!-- page -->
+
+
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script src="js/jqm-docs.js"></script>
+    <script type="text/javascript" src="js/json.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

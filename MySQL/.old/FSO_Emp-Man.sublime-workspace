@@ -1,0 +1,236 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"secon",
+				"secondsInDay"
+			],
+			[
+				"dif",
+				"difference"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 54.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/michaely/Dropbox/GitRepos/FSO_Emp-Man/original/index.html",
+		"/home/michaely/Dropbox/GitRepos/FSO_Emp-Man/plat/",
+		"/home/michaely/Code/x10_www/sftp-config.json",
+		"/home/michaely/Code/x10_www/www/homepage.htm",
+		"/home/michaely/.gvfs/sftp for sandi on aliendev.com/home/sandi/public_html/armaru.com/wp-content/themes/hero/options.php",
+		"/home/michaely/.gvfs/sftp for sandi on aliendev.com/home/sandi/public_html/armaru.com/wp-content/themes/hero/admin/js/options-custom.js",
+		"/home/michaely/.gvfs/sftp for sandi on aliendev.com/home/sandi/public_html/armaru.com/wp-content/themes/hero/admin/options-framework.php",
+		"/home/michaely/.gvfs/sftp for sandi on aliendev.com/home/sandi/public_html/armaru.com/wp-content/themes/hero/admin/options-interface.php",
+		"/home/michaely/.gvfs/sftp for sandi on aliendev.com/home/sandi/public_html/armaru.com/wp-content/themes/hero/style.css",
+		"/home/michaely/Dropbox/GitRepos/FSO_Emp-Man/plat/js/main.js",
+		"/home/michaely/.config/sublime-text-2/Packages/jQuery Mobile Snippets/dialog.sublime-snippet",
+		"/home/michaely/.config/sublime-text-2/Packages/jQuery Mobile Snippets/Structure/header-fixed.sublime-snippet",
+		"/home/michaely/.config/sublime-text-2/Packages/jQuery Mobile Snippets/Structure/semantic-page.sublime-snippet",
+		"/home/michaely/.config/sublime-text-2/Packages/jQuery Mobile Snippets/starter.sublime-snippet",
+		"/home/michaely/Dropbox/GitRepos/FSO_Emp-Man/README",
+		"/home/michaely/.config/sublime-text-2/Packages/jQuery Mobile Snippets/Form Elements/fieldcontain.sublime-snippet",
+		"/home/michaely/.config/sublime-text-2/Packages/jQuery Mobile Snippets/package-metadata.json",
+		"/home/michaely/Dropbox/GitRepos/FSO_Emp-Man/youngblood_michael-github_links.txt",
+		"/home/michaely/Dropbox/GitRepos/FSO_Emp-Man/original/js/main.js",
+		"/home/michaely/Dropbox/GitRepos/FSO_Emp-Man/gold/index.html",
+		"/home/michaely/Dropbox/GitRepos/FSO_Emp-Man/gold/css/style.css",
+		"/home/michaely/Dropbox/GitRepos/FSO_Emp-Man/gold/js/main.js",
+		"/home/michaely/.gvfs/users on server1/callcnt/tstanley/UserData/index.dat",
+		"/home/michaely/.gvfs/users on server1/callcnt/tstanley/Favorites/XX36A.url",
+		"/home/michaely/.gvfs/users on server1/callcnt/tstanley/Favorites/Victoria's Secret Credit Card.url",
+		"/home/michaely/.gvfs/users on server1/callcnt/tstanley/Favorites/T-Shirts - Custom T-Shirts - Shirt Screen Printers - Design Online at CustomInk.url",
+		"/home/michaely/.gvfs/users on server1/callcnt/tstanley/Favorites/THAS New Site.url",
+		"/home/michaely/.gvfs/users on server1/callcnt/tstanley/Favorites/Software History.url",
+		"/home/michaely/.gvfs/users on server1/callcnt/tstanley/Favorites/Stock Response Sheet.url",
+		"/home/michaely/.gvfs/users on server1/callcnt/tstanley/Favorites/Selling Tools.url",
+		"/home/michaely/.gvfs/users on server1/callcnt/tstanley/Favorites/Old Desktop.lnk",
+		"/home/michaely/.gvfs/users on server1/callcnt/tstanley/Favorites/Online IP Subnet Calculator.url",
+		"/home/michaely/.gvfs/users on server1/callcnt/tstanley/Favorites/Mac Indigo.url",
+		"/home/michaely/Dropbox/GitRepos/FSO_Emp-Man/gold/js/old.js",
+		"/home/michaely/Dropbox/GitRepos/FSO_Emp-Man/gold/js/json.js",
+		"/home/michaely/Dropbox/GitRepos/FSO_Emp-Man/gold/js/jqm-docs.js",
+		"/home/michaely/Dropbox/GitRepos/FSO_Emp-Man/gold/dynamicinjection.html",
+		"/home/michaely/Dropbox/GitRepos/FSO_Emp-Man/bronze/index.html",
+		"/home/michaely/Dropbox/GitRepos/FSO_Emp-Man/week2/index.html",
+		"/home/michaely/.ssh/id_rsa.pub",
+		"/home/michaely/Dropbox/GitRepos/FullSail-SDI/Youngblood_Michael_assignment4.js",
+		"/home/michaely/Dropbox/GitRepos/FullSail-SDI/Youngblood_Michael_assignment3.js",
+		"/home/michaely/.gvfs/sftp for michael on 192.168.11.172/home/michael/Code/x10/ordersRemoveFromInventoryHold.py",
+		"/home/michaely/Dropbox/Sublime Text - Thanks! (receipt and key).webarchive"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"button",
+			"ttrust",
+			"bannerText",
+			"header",
+			"getNewsFeed",
+			"newsfeed",
+			"getNewsFeed",
+			"getnewsfeed",
+			"bEmployee",
+			" data-add-back-btn=\"true\"",
+			"autoFillDefaultData",
+			"<a href=\"#\" data-rel=\"back\">",
+			"delete",
+			"data-add-back-btn=\"true\"",
+			"header",
+			"\nnewHire",
+			"edit",
+			"newHire",
+			"page",
+			"\">",
+			"page",
+			"	",
+			"categoryData",
+			"localStorage",
+			"localStorage\n\n\nlocalStorage",
+			"google.load(\"feeds\", \"1\");\n",
+			"\n\nfunction getCreatedTimestamp() {\n    var date = new Date();\n    var year = date.getFullYear();\n    var month = date.getMonth() + 1;\n    var day = date.getDay();\n    var hour = date.getHours();\n    var minutes = date.getMinutes();\n    var seconds = date.getSeconds();\n\n    formattedTime = year + '/' + month + '/' + day + ' ' + hour + ':' + minutes + ':' + seconds;\n    createdTimestamp = formattedTime;\n    return false;\n\n}\n\nfunction getNetID() {\n    //create network login id first initial last name\n    var fname = ge('firstName').value;\n    var lname = ge('lastName').value;\n\n    id = fname.charAt(0) + lname;\n    netid = id.toLowerCase();\n}\n\n\nfunction getEmailID() {\n    //create network login id first initial last name\n    var fname = ge('firstName').value;\n    var lname = ge('lastName').value;\n\n    id = fname + lname.charAt(0);\n    emailid = id.toLowerCase();\n}\n\nfunction getEmailAddress(id) {\n    emailAddress = id + '@x10.com';\n}\n\n\nfunction hackify(str) {\n    // hackify strings for things like passwords\n    // hackify is l337 5p38k. 3 = e, 8 = a, etc. \n    str = str.replace('1','!'); // do number replacement first so it doesn't change i to !\n    str = str.replace(' ','_');\n    str = str.replace('a','8');\n    str = str.replace('A','8');\n    str = str.replace('e','3');\n    str = str.replace('E','3');\n    str = str.replace('i','1');\n    str = str.replace('I','1');\n    str = str.replace('o','0');\n    str = str.replace('O','0');\n    str = str.replace('s','5');\n    str = str.replace('S','5');\n    str = str.replace('t','7');\n    str = str.replace('T','7');\n    return str;\n}\n\nfunction getRepTag() {\n     // rep tag (Last Initial, First Initial, last 3 of extension: YM225)\n    var fname = ge('firstName').value;\n    var lname = ge('lastName').value;\n    var ext = ge('phoneExt').value;\n\n    id = ( lname.charAt(0) + fname.charAt(0) + ext.slice(1,4) );\n    repTag = id.toUpperCase();\n}\n\nfunction getPassWord() {\n    // password = x10firstname last initial + hackified\n    var fname = ge('firstName').value;\n    var lname = ge('lastName').value;\n\n    id = 'x10' + hackify(fname + lname.charAt(0));\n    passWord = id.toLowerCase();\n}\n\nfunction getPandionUser() {\n    // pandion user (firstname.lastname@sku.x10.com)\n    var fname = ge('firstName').value;\n    var lname = ge('lastName').value;\n\n    id = fname + '.' + lname + '@sku.x10.com';\n    pandionid = id.toLowerCase();\n}\n\n\nfunction getPandionPassword() {\n    var fname = ge('firstName').value;\n    var lname = ge('lastName').value;\n\n    id = lname + fname.charAt(0);\n    pandionpass = id.toLowerCase();\n}",
+			"autofilldefa",
+			"getDataByFname",
+			"ge(",
+			"\n//getElementById function\nfunction ne (x) {\n    var theElement = document.getElementById(x);\n    return theElement;\n};\n",
+			"ne",
+			"System"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"<a href=\"index.html\">",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 73.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/michaely/.config/sublime-text-2/Packages/x10-com.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 282.0,
+	"status_bar_visible": true
+}

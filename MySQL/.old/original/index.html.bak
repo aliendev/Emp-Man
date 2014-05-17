@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- 
+Name: 	Michael Youngblood
+Class: 	MiU 1204
+-->
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Emp-Man: Employee Manager (For IT)</title>
+
+	<meta name="description" content="Employee Manager (For IT) is an app for the IT professional. It isn't just a contact manager, it is an information manager. Add/Edit/View/Remove employees to keep an updated list of current employees." />
+	<meta name="keywords" content="it, employee, management, professional, mobile, app, application" />
+
+	<meta name="author" content="Michael Youngblood" />
+
+	<meta name="robots" content="index, follow all" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<link rel="apple-touch-icon" href="images/iphone-icon.png" />
+
+</head>
+<body>
+	<header>
+		<img src="images/logo.png" alt="Emp-Man" id="logo" />
+	</header>
+
+	<article>
+		<a href="additem.html"><img src="images/feature_add-an-employee_tmp.png" /></a>
+		<img src="images/test_features.png" />
+		<img src="" width=288 height=100 />
+		<p>
+			<form>
+				<input type="input" /> 
+				<input type="submit" value="Search" />
+			</form>
+		</p>
+		<p>browsable stuff</p>
+		<p>Employee Manager (For IT) is an app for the IT professional. It isn't just a contact manager, it is an information manager. Add/Edit/View/Remove employees to keep an updated list of current employees. (portray this info in the cta)</p>
+
+	</article>
+
+	<footer>
+		put a branding and copy write info with nice footer to complete interface
+	</footer>
+	<script type="text/javascript" src='js/jquery.mobile.v1_1.js'></script>
+</body>
+</html>

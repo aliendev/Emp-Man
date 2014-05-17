@@ -1,0 +1,58 @@
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 110px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge {
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: -1px;
+}
+
+.large {
+	font-size: 42px;
+	line-height: 48px;
+}
+
+.bigger {
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.big {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+
+.small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+
+.ui-page {
+	background: transparent url('../images/plaid_bg.png') repeat center center;
+}
+
+label.error {
+    display:block;
+    margin:10px 0;
+    color:#c00;
+}
+
+
+.logoImage {
+	padding: 0 10px;
+}
+
+#errors, #errorsMsg { display: none }
+
+.center {
+	text-align: center;
+}

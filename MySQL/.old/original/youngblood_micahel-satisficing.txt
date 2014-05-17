@@ -1,0 +1,3 @@
+Satisficing, a "handy blended word combining satisfy with suffice", is a decision-making strategy that attempts to meet criteria for adequacy, rather than to identify an optimal solution.
+
+To me, it means to give the user what they need, and make it as awesome as it can be. Instead of giving them a lot of cool features, give them the features they needed when they wanted the app and make those work as well as they can. 

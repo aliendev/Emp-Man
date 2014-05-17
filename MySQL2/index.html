@@ -1,0 +1,413 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    
+    <title>Emp-Man: Employee Manager (For IT)</title>
+    
+    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Mobile IE needs ClearType for smoothing fonts -->
+    <meta http-equiv="cleartype" content="on">
+    
+    <!-- StyleSheets under here -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.1.0.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />    
+    <link rel="apple-touch-icon" href="images/iphone-icon.png" />
+
+    <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+    <script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body> 
+    <section data-role="page" id="home">
+        <header data-role="header" data-position="fixed">
+            <p><img src="images/logo_light.png" class="logoImage" /></p>
+        </header>
+    
+        <article data-role="content">
+
+            <a href="#addNewHirePage"><img src="images/feature_add-an-employee_tmp.png" /></a><br />
+            <br />
+
+            <form method="post" action="" id="searchForm">
+                  <input type="search" name="search" id="search-basic" placeholder="Search Employees" />
+              </form>
+              <br />
+
+              <div data-role="collapsible-set" data-theme="a">
+                  
+                <div data-role="collapsible">
+                      <h3>Browse by...</h3>
+                    <ul data-role="listview" data-inset="false">
+                        <li>
+                            <a href="#" id="displayByFname">
+                                <h3>First Name</h3>
+                                <p>Browse employees by their first name.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#under_construction" id="displayByExt">
+                                <h3>Phone Extensions</h3>
+                                <p>Browse employees by their phone extensions.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#under_construction" id="displayByDept">
+                                <h3>Departments</h3>
+                                <p>Browse employees by their Departments.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- collapsible: Browse by  -->
+                <div data-role="collapsible">
+                    <h3>Manage Emp-Man</h3>
+                    <ul data-role="listview" data-inset="false">
+                        <li>
+                            <a href="#addNewHirePage">
+                                <h3>Add a NewHire</h3>
+                                <p>still needs to be worked</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Import/Export</h3>
+                    <ul data-role="listview" data-inset="false">
+                        <li>
+                            <a href="#importNewDataPage" id="importNewDataLink">
+                                <h3>Import New Data</h3>
+                                <p>Imports new data and adds it to database.
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#importReplaceDataPage" id="importReplaceAllData">
+                                <h3>Import &amp; Replace All Data</h3>
+                                <p>Deletes DB Contents and imports new Data</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#exportAllDataPage">
+                                <h3>Export All Data</h3>
+                                <p>Either backup the whole database, or email it</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#importDefualtJSONtMySQL">
+                                <h3>Import Default JSON to MySQL</h3>
+                                <p>Adds Default JSON Data to the DB</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="clearLink">
+                                <h3>Clear Data</h3>
+                                <p>Delete all data in database</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- collapsible: import/export --> 
+                <div data-role="collapsible">
+                    <h3>Settings and Other Links</h3>
+                    <ul data-role="listview" data-inset="false">
+                        <li>
+                            <a href="#dataOutputPage">
+                                <h3>go to #dataOutputPage</h3>
+                                <p>this was a thought to export data to, so you can copy and paste to where ever you want</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3>System Settings</h3>
+                                <p>View/Edit System Settings</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- collapsible: other test lnks --> 
+            </div><!-- collapsible set -->
+        </article><!-- content -->
+        <footer data-role="footer" data-position="fixed" id='footer'>
+                <h4>Emp-Man &copy; All Rights Reserved</h4>
+        </footer><!-- Footer -->
+    </section> <!--  /home -->
+
+    <section data-role="page" id="bFname">
+        <header data-role="header" data-position="fixed">
+            <p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="#addNewHirePage">Add</a></li>
+                    <li><a href="#bEmpExport">Export</a></li>
+                    <li><a href="#bFnameSort">Sort</a></li>
+                </ul>
+            </nav><!-- /navbar -->        
+        </header><!-- Header -->
+    
+        <article data-role="content" id="employeelistview"></article><!-- Content -->
+
+        <footer data-role="footer" data-position="fixed" id='footer'>
+                <h4>Emp-Man &copy; All Rights Reserved</h4>
+        </footer><!-- Footer -->
+    </section><!-- /bFname -->
+
+    <!-- Dynamic employee view -->
+    <section data-role="page" id="bEmployee">
+        <header data-role="header" data-position="fixed">
+            <p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="#bEmpEdit">Edit</a></li>
+                    <li><a href="#bEmpDelete">Delete</a></li>
+                    <li><a href="#bEmpExport">Export</a></li>
+                </ul>
+            </nav><!-- /navbar -->
+        </header><!-- /Header -->
+        <article data-role="content"></article>
+        <footer data-role="footer" data-position="fixed" id='footer'>
+            <h4>Emp-Man &copy; All Rights Reserved</h4>
+        </footer><!-- Footer -->
+
+    </section><!-- /bEmployee -->
+
+    <section data-role="page" id="addNewHirePage">
+        <header data-role="header" data-position="fixed">
+            <p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+        </header><!-- Header -->
+    
+        <article data-role="content">
+
+            <form method="post" id="addNewHireForm">
+                <fieldset>
+                    <input type="hidden" id="key" value="" />
+                    <span class="small">* Fields are required</span>
+                    <div id='errors'><ul></ul></div>
+
+                    <div>
+                        <div data-role="fieldcontain">
+                            <label for="firstName">First Name:* </label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Doug" title="First name required!" class="required text" />
+                        </div><!-- field contain --> 
+                        <div data-role="fieldcontain">
+                            <label for="lastName">Last Name:* </label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Bradley" title="Last name required!" class="required text" /> 
+                        </div><!-- field contain --> 
+                        <div data-role="fieldcontain">
+                            <label for="hireDate">Hire Date: </label>
+                            <input type="date" placeholder="2-4-2011" id="hireDate" name="hireDate"/>
+                        </div><!-- field contain --> 
+                        <div data-role="fieldcontain">
+                            <label for="empStatus">Active Employee </label>
+                            <input type="checkbox" id="empStatus" name="empStatus" value='Active' CHECKED /> 
+                            <!-- responsive term date? --> 
+                        </div><!-- field contain --> 
+                        <div data-role="fieldcontain">
+                            <div id="select">
+                                <label for="position">Position:* </label>
+                                <select id='jobTitle' name="jobTitle" title="Select a position" class="required">
+                                    <option value=''>--Select a Position--</option>
+                                </select>
+                            </div>
+                        </div><!-- field contain --> 
+                        <div data-role="fieldcontain">
+                            <fieldset>
+                                <legend>Operating System</legend>
+                                <label for="winxp">Windows XP</label>
+                                <input type="radio" name="os" id="winxp" value='WinXP' CHECKED />
+                                <label for="win7">Windows 7</label>
+                                <input type="radio" name="os" id="win7" value='Win7' />
+                            </fieldset>
+                        </div><!-- field contain --> 
+                        <div data-role="fieldcontain">
+                            <label for="swipeID">Swipe ID:* </label>
+                            <input type="text" id="swipeID" name="swipeID" placeholder="12345" class="required number" title="Swipe ID Required" />
+                        </div><!-- field contain --> 
+                        <div data-role="fieldcontain">
+                            <label for="phoneExt">Phone Extension:* </label>
+                            <input type="text" id="phoneExt" name="phoneExt" placeholder="2225" class="required number" title="Phone Extension required" /> 
+                        </div><!-- field contain --> 
+                        <div data-role="fieldcontain">
+                            <label for="notes">Notes: </label>
+                            <textarea id="notes" name="notes"></textarea>
+                        </div><!-- field contain --> 
+                            <button type="submit" id='submit' name='submit' data-theme='b'>Add New-Hire</button>
+                    <div id='errorsMsg'><ul></ul></div>
+                    </div>
+                </fieldset>
+            </form>
+
+        </article><!-- content -->
+        <footer data-role="footer" data-position="fixed" id='footer'>
+                <h4>Emp-Man &copy; All Rights Reserved</h4>
+        </footer><!-- Footer -->
+    </section><!-- /addNewHirePage -->
+
+    <section id="importDefualtJSONtMySQL" data-role="page">
+        <header data-role="header" data-position="fixed">
+            <p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+        </header><!-- /header -->
+        <article data-role="content">
+            <h2>Import default json to mysql</h2>
+            <p>This button will import data from the default json file we made to the new mysql database. WARNING: This will not add more data for reptags and departments are identified as unique in MySQL. If you need a fresh start, then you will need to delete from tables (SQL: delete from empman.employees)</p>
+            <form method="post" id="importDefualtJSONtMySQLForm">
+                <fieldset>
+                    <button type="submit" id='importDefualtJSONtMySQLFormSubmit' name='importDefualtJSONtMySQLFormSubmit' data-theme='b'>Import Default Data</button>
+                </fieldset>
+            </form>
+        </article><!-- /content -->
+        <footer data-role="footer" data-position="fixed" id='footer'>
+            <h4>Emp-Man &copy; All Rights Reserved</h4>
+        </footer><!-- /footer -->
+    </section><!-- /page -->
+
+
+    <section id="exportAllDataPage" data-role="page">
+        <header data-role="header" data-position="fixed">
+            <p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+        </header><!-- /header -->
+        <article data-role="content">
+            <h2>Export All Data</h2>
+            <form method="post" id="exportAllDataForm">
+                <fieldset>
+                    <div data-role="fieldcontain">
+                        <fieldset>
+                            <legend>Location:</legend>
+                            <label for="exportAllDataLocationBkupLocal">Backup Locally</label>
+                            <input type="radio" name="exportAllDataLocation" id="exportAllDataLocationBkupLocal" value='backupLocally' CHECKED />
+                            <label for="exportAllDataLocationEmail">Email Data File</label>
+                            <input type="radio" name="exportAllDataLocation" id="exportAllDataLocationEmail" value='email' />
+                        </fieldset>
+                    </div>
+                    <div data-role="fieldcontain" id="exportAllDataTypes" style="display:none">
+                        <fieldset>
+                            <legend>Data Type:</legend>
+                            <label for="exportAllDataTypeCSV">CSV File</label>
+                            <input type="radio" name="exportAllDataType" id="exportAllDataTypeCSV" value='csv' CHECKED />
+                            <label for="exportAllDataTypeJSON">JSON File</label>
+                            <input type="radio" name="exportAllDataType" id="exportAllDataTypeJSON" value='json' />
+                            <label for="exportAllDataTypeXML">XML File</label>
+                            <input type="radio" name="exportAllDataType" id="exportAllDataTypeXML" value='xml' />
+                        </fieldset>
+                    </div>
+                    <div data-role="fieldcontain" id="exportAllEmailField" style="display:none">
+                        <fieldset>
+                            <label for="emailAllEmailAddress">Email</label>
+                            <input type="text" name="exportAllEmailAddress" id="emailAllEmailAddress" />
+                        </fieldset>
+                    </div>
+                    <button type="submit" id='exportAllDataFormSubmit' name='exportAllDataFormSubmit' data-theme='b'>Export All Files</button>
+                </fieldset>
+            </form>
+        </article><!-- /content -->
+        <footer data-role="footer" data-position="fixed" id='footer'>
+            <h4>Emp-Man &copy; All Rights Reserved</h4>
+        </footer><!-- /footer -->
+    </section><!-- /page -->
+
+
+
+    <section id="dataOutputPage" data-role="page">
+        <header data-role="header" data-position="fixed">
+            <p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+        </header><!-- /header -->
+        <article data-role="content" id='dataOutputTextArea'>
+        </article><!-- /content -->
+        <footer data-role="footer" data-position="fixed" id='footer'>
+            <h4>Emp-Man &copy; All Rights Reserved</h4>
+        </footer><!-- /footer -->
+    </section><!-- /page -->
+
+
+    <section id="importNewDataPage" data-role="page">
+        <header data-role="header" data-position="fixed">
+            <p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+        </header><!-- /header -->
+        <article data-role="content">
+            <h2>Import new data from file</h2>
+            <p>This will allow you to add new data via importing a CSV, XML, or JSON data files. These files are located in the /data directory</p>
+            <form method="post" id="importNewDataForm">
+                <fieldset>
+                    <legend>File Type:</legend>
+                    <label for="importNewDatacsv">CSV</label>
+                    <input type="radio" name="importNewDataFileType" id="importNewDatacsv" value='csv' CHECKED />
+                    <label for="importNewDatajson">JSON</label>
+                    <input type="radio" name="importNewDataFileType" id="importNewDatajson" value='json' />
+                    <label for="importNewDataxml">XML</label>
+                    <input type="radio" name="importNewDataFileType" id="importNewDataxml" value='xml' />
+                </fieldset>
+                <fieldset>
+                    <button type="submit" id='importNewDataFormSubmit' name='importNewDataFormSubmit' data-theme='b'>Import New Data</button>
+                </fieldset>
+            </form>
+        </article><!-- /content -->
+        <footer data-role="footer" data-position="fixed" id='footer'>
+            <h4>Emp-Man &copy; All Rights Reserved</h4>
+        </footer><!-- /footer -->
+    </section><!-- /importNewDataPage -->
+
+    <section id="importReplaceDataPage" data-role="page">
+        <header data-role="header" data-position="fixed">
+            <p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+        </header><!-- /header -->
+        <article data-role="content">
+            <h2>Import new data from file</h2>
+            <p>This will allow you to delete while importing new data. Use this feature if you say exported the database and you are trying to replace and update everything. It is not the best route of updating MySQL, change to update based on reptag? </p>
+            <form method="post" id="importReplaceDataForm">
+                <fieldset>
+                    <legend>File Type:</legend>
+                    <label for="importReplaceDatacsv">CSV</label>
+                    <input type="radio" name="importReplaceDataFileType" id="importReplaceDatacsv" value='csv' CHECKED />
+                    <label for="importReplaceDatajson">JSON</label>
+                    <input type="radio" name="importReplaceDataFileType" id="importReplaceDatajson" value='json' />
+                    <label for="importReplaceDataxml">XML</label>
+                    <input type="radio" name="importReplaceDataFileType" id="importReplaceDataxml" value='xml' />
+                </fieldset>
+                <fieldset>
+                    <button type="submit" id='importReplaceDataSubmit' name='importReplaceDataSubmit' data-theme='b'>Import New Data</button>
+                </fieldset>
+            </form>
+        </article><!-- /content -->
+        <footer data-role="footer" data-position="fixed" id='footer'>
+            <h4>Emp-Man &copy; All Rights Reserved</h4>
+        </footer><!-- /footer -->
+    </section><!-- /importNewDataPage -->
+
+    <section id="under_construction" data-role="page">
+        <header data-role="header" data-position="fixed">
+            <p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+        </header><!-- /header -->
+        <article data-role="content">
+            <p class="center"><img src="images/under_construction.png" /></p>
+        </article><!-- /content -->
+        <footer data-role="footer" data-position="fixed" id='footer'>
+            <h4>Emp-Man &copy; All Rights Reserved</h4>
+        </footer><!-- /footer -->
+    </section><!-- /under_construction -->
+
+    <!-- This is a default page for copy and pasting ease --> 
+    <section id="page" data-role="page">
+        <header data-role="header" data-position="fixed">
+            <p><a href="#" data-rel="back"><img src="images/logo_light.png" class="logoImage" /></a></p>
+        </header><!-- /header -->
+        <article data-role="content">
+            <p>Content</p>
+        </article><!-- /content -->
+        <footer data-role="footer" data-position="fixed" id='footer'>
+            <h4>Emp-Man &copy; All Rights Reserved</h4>
+        </footer><!-- /footer -->
+    </section><!-- /page -->
+
+    <!-- JavaScript under here -->
+    <script type="text/javascript" src="js/libs/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.mobile-1.1.0.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/libs/jqm-docs.js"></script>
+    <script type="text/javascript" src="js/json.js"></script>
+    <!--script type="text/javascript" src="js/data.json"></script-->
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

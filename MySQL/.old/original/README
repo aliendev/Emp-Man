@@ -1,0 +1,63 @@
+Emp-Man: A FSO Multi-Course Project. Built to create and manage information about employees at a call center.
+
+I use the readme file to keep track of what I need to do, inside and outside what is assigned. 
+
+
+Wimba - May 2 2012 notes: 
+
+- json.js needs 20 people, I can use the contact list that I made the other day for phone switch changes
+
+- what is the bronze gold file structure that is required? 
+
+- replace $(x) with something like ge(x), the dollar will break JQuery
+
+- appealing visual
+
+- logo (branding) 
+
+- make a better short description
+
+- call to action should be:
+
+- need search bar
+
+- feature, cta, logo, and search should be above the fold. should also have a little bit of the browsing
+
+- remember to justify any decisions
+
+- easter eggs? 42
+
+- mini assignments due monday
+
+- each class will have a folder and each week will have a branch in GIT
+
+- reflection videos maybe 3-5 minutes now
+
+- provide justification for all answers or decisions or choices
+
+- discussion videos are due friday night, by saturday night i need to have 2 responses to other classmates, address the person to whom you are responding too
+
+
+mini assignment
+
+My name is Michael Youngblood. I don't mind shortened names. In fact, my friends and co-workers just call me YB. You may call me whatever comes to mind when you need to address me. 
+
+My iChat handle is aliendev@fullsail.edu. The best time of day I can be available is between 11:00am and 12:00pm (my lunch period) PST. I live south of Seattle, WA. 
+
+
+definition assignment? 
+relisten to wimba, listen for this. 
+
+
+rubric for project 1
+feature/center stage - present an enticing call to action. 
+clear entry points - at least 5 task oriented, descriptive entry points to the app from index.html
+search field
+browsable categories
+
+
+
+
+
+
+

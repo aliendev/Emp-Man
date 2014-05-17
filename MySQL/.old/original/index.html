@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<!-- 
+Name: 	Michael Youngblood
+Class: 	MiU 1204
+-->
+<html> 
+	<head> 
+	<title>Emp-Man: Employee Manager (For IT)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+</head> 
+<body>
+ 
+<div data-role="page" id="main">
+ 
+  <div data-role="header">
+    <h1>Emp-Man</h1>
+  </div><!--header-->
+ 
+  <div data-role="content"> 
+
+	<a href="additem.html" data-ajax="false"><img src="images/feature_add-an-employee_tmp.png" /></a><br />
+	<br />
+
+  	<input type="search" name="search" id="search-basic" placeholder="Search Employees" /><br />
+	<br />
+
+	<ul data-role="listview" data-theme="c">
+		<li data-role="list-divider">Browse by...</li>
+		<li><a href="#test">First Name</a></li>
+		<li><a href="#test">Departments</a></li>
+		<li><a href="#test">Phone Extensions</a></li>
+	</ul><br />
+	<br />
+
+  </div><!--content-->
+ 
+  <div data-role="footer">
+    <h4>Copyright 2012 AlienDev, All Rights Reserved.</h4>
+  </div>
+</div><!--page-->
+ 
+
+
+
+<div data-role="page" id="test">
+ 
+  <div data-role="header">
+  	<a href="#main" data-icon="back">Back</a>
+    <h1>Browse by...</h1>
+  </div><!--header-->
+ 
+  <div data-role="content"> 
+
+	<p>Content goes here...</p>
+	<br />
+
+  </div><!--content-->
+ 
+  <div data-role="footer">
+    <h4>Copyright 2012 AlienDev, All Rights Reserved.</h4>
+  </div>
+</div><!--page-->
+
+
+
+</body>
+</html>

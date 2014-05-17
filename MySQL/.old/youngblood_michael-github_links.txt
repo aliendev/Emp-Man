@@ -1,0 +1,11 @@
+master repo:
+https://github.com/aliendev/FSO_Emp-Man
+
+gh-pages repo:
+https://github.com/aliendev/FSO_Emp-Man/tree/gh-pages
+
+
+
+live gh-pages link: 
+http://aliendev.github.com/FSO_Emp-Man/gold/
+

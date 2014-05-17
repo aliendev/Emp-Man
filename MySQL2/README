@@ -1,0 +1,75 @@
+
+
+cloudant tut: 
+http://support.cloudant.com/customer/portal/articles/359321-how-do-i-read-and-write-to-my-cloudant-database-from-the-browser-
+
+
+
+zen coding + installer (jquery mobile package is in the installer too)
+http://designshack.net/articles/css/cant-get-into-preprocessors-try-zen-coding/
+
+
+
+
+sample csv parser
+
+// Assume that your entire CSV file is in the data variable.
+// The "\n" is the string escape for the end-of-line character.
+var lines = data.split("\n");
+// The lines variable is now an array of lines of text.
+for (var lineNum = 0; lineNum < lines.length; lineNum++) {
+    // Get the current line/row
+    var row = lines[lineNum];
+    var columns = row.split(",");
+    // The columns variable is now an array.
+    console.log(columns);
+} // for lineNum
+
+
+
+
+
+
+
+make import and export buttons that import/export/replace all data, or import more data, or export a specific person in xml, json, and csv. 
+
+
+
+
+
+
+
+
+
+// sample reflection video post
+http://youtu.be/WU02ReZ_e3U
+<iframe width="640" height="360" src="http://www.youtube.com/embed/WU02ReZ_e3U" frameborder="0" allowfullscreen></iframe>
+
+GitHub Master branch: https://github.com/aliendev/FSO_Emp-Man
+ 
+GitHub pages: http://aliendev.github.com/FSO_Emp-Man/index.html
+
+
+
+By the end of this course you will create a web application that generates data that can be consumed by a mobile app. You will create a web service. In this activity you will research what it means to be a web service, as well as some common industry practices for how a web service interacts with its client apps.
+
+read more about this again. 
+
+
+
+
+
+
+Bugs
+Searching is very bugged
+
+
+
+
+read later
+http://webdesignledger.com/inspiration/18-great-examples-of-sketched-ui-wireframes-and-mockups
+http://webdesignledger.com/freebies/11-ui-kits-for-iphone-and-ipad-development
+http://webdesignledger.com/freebies/10-free-printable-web-design-wireframing-templates
+
+
+

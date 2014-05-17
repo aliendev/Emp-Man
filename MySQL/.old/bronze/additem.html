@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- 
+Name:     Michael Youngblood
+Class:     VFW 1203
+-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Emp-Man: Employee Manager (For IT)</title>
+
+    <meta name="description" content="Employee Manager (For IT) is an app for the IT professional. It isn't just a contact manager, it is an information manager. Add/Edit/View/Remove employees to keep an updated list of current employees." />
+    <meta name="keywords" content="it, employee, management, professional, mobile, app, application" />
+
+    <meta name="author" content="Michael Youngblood" />
+
+    <meta name="robots" content="index, follow all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="apple-touch-icon" href="images/iphone-icon.png" />
+
+</head>
+<body>
+    <header>
+        <h1>Emp-Man</h1>
+    </header>
+
+    <article>
+        <p><a href="#" id="clearLink">Clear Data</a>  |  <a href="#" id="displayLink">Display Data</a> <a href="#" id="addNewLink" style='display: none;'>Add a NewHire</a></p>
+
+        <form action="#" method="post" id="addNewHire">
+            <fieldset>
+                <legend>Add A New Hire</legend>
+                <span class="small">* Fields are required</span>
+                <ul id='errors'></ul>
+
+
+                <div class="inside">
+                    <label for="firstName" class="txt">First Name:* </label>
+                    <input type="text" id="firstName" />
+
+                    <label for="lastName" class="txt">Last Name:* </label>
+                    <input type="text" id="lastName" /> 
+
+                    <label for="hireDate" class="txt">Hire Date: </label>
+                    <input type="date" id="hireDate"/>
+
+                    <label for="empStatus">Active: </label>
+                    <input type="checkbox" id="empStatus" value='Active' /> 
+
+                    <div id="select">
+                        <label for="position" class="txt">Position:* </label>
+                    </div>
+
+                    <label for="exp" class="txt">Experience: </label>
+                    <input type="range" id="exp" min="1" max="10" />
+
+                    <label for="winxp">Windows XP</label>
+                    <input type="radio" name="os" id="winxp" value='WinXP' />
+                    <label for="win7">Windows 7</label>
+                    <input type="radio" name="os" id="win7" value='Win7' />
+
+                    <label for="swipeID" class="txt">Swipe ID:* </label>
+                    <input type="text" id="swipeID" /> 
+
+                    <label for="phoneExt" class="txt">Phone Extension:* </label>
+                    <input type="text" id="phoneExt" /> 
+
+                    <label for="notes" class="txt">Notes: </label>
+                    <textarea id="notes">test</textarea>
+
+                    <div class="center" style="clear:both;">
+                        <button type="submit" id='submit'>Add New-Hire</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+    </article>
+
+
+    <script type="text/javascript" src="js/json.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
